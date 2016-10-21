@@ -1,3 +1,35 @@
+/*
+4-1 Add Two Polynomials   (20分)
+Write a function to add two polynomials. Do not destroy the input. Use a linked list implementation with a dummy head node. Note: The zero polynomial is represented by an empty list with only the dummy head node.
+
+Format of functions:
+
+Polynomial Add( Polynomial a, Polynomial b );
+where Polynomial is defined as the following:
+
+typedef struct Node *PtrToNode;
+struct Node {
+    int Coefficient;
+    int Exponent;
+    PtrToNode Next;
+};
+typedef PtrToNode Polynomial;
+// Nodes are sorted in decreasing order of exponents.
+The function Add is supposed to return a polynomial which is the sum of a and b.
+
+Sample Input:
+
+4
+3 4 -5 2 6 1 -2 0
+3
+5 20 -7 4 3 1
+Sample Output:
+
+5 20 -4 4 -5 2 9 1 -2 0
+*/
+
+//code:
+
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Node *PtrToNode;
