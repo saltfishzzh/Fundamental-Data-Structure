@@ -1,3 +1,32 @@
+/*
+4-2 Reverse Linked List   (20分)
+Write a nonrecursive procedure to reverse a singly linked list in O(N) time using constant extra space.
+
+Format of functions:
+
+List Reverse( List L );
+where List is defined as the following:
+
+typedef struct Node *PtrToNode;
+typedef PtrToNode List;
+typedef PtrToNode Position;
+struct Node {
+    ElementType Element;
+    Position Next;
+};
+The function Reverse is supposed to return the reverse linked list of L, with a dummy header.
+
+Sample Input:
+
+5
+1 3 4 5 2
+Sample Output:
+
+2 5 4 3 1
+2 5 4 3 1
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
